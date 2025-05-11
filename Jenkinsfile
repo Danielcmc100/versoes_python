@@ -12,19 +12,13 @@ pipeline {
       }
     }
     stage('Release') {
-      // Condicional para executar apenas em branches específicas, se necessário
-      // Exemplo: when { branch 'main' } ou when { branch 'master' }
+      when { branch 'main' } 
       steps {
         withCredentials([
           string(credentialsId: 'github-token', variable: 'GH_TOKEN'),
         ]) {
           sh '''
-            # Garante que estamos na branch correta e não em detached HEAD
-            # Isso é crucial para o semantic-release
             git checkout ${BRANCH_NAME}
-
-            # Configurar o usuário git para o semantic-release poder fazer commits (se necessário)
-            # Se o semantic-release for fazer commit (ex: changelog, package.json version bump)
 
             export GH_TOKEN=$GH_TOKEN
             uv run semantic-release version
