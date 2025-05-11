@@ -12,7 +12,7 @@ pipeline {
       }
     }
     stage('Release') {
-      when { branch 'main' } 
+      when { branch 'master' } 
       steps {
         withCredentials([
           string(credentialsId: 'github-token', variable: 'GH_TOKEN'),
