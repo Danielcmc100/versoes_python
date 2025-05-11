@@ -4,11 +4,6 @@ pipeline {
     GH_TOKEN   = credentials('github-token')
   }
   stages {
-    stage('Checkout') {
-      steps {
-        checkout scm
-      }
-    }
     stage('Install deps & Test') {
       steps {
         sh '''
