@@ -1,6 +1,22 @@
 # CHANGELOG
 
 
+## v0.3.1 (2025-05-11)
+
+### Bug Fixes
+
+- Clean up comments and ensure correct branch condition for release stage in Jenkinsfile
+  ([`00ab7a6`](https://github.com/Danielcmc100/versoes_python/commit/00ab7a67a9c2979d49b8931bcfc14e67e7f84c58))
+
+### Continuous Integration
+
+- Updates release stage to trigger on master branch
+  ([`fde77df`](https://github.com/Danielcmc100/versoes_python/commit/fde77df53f326af0762df3fd531dedf706072242))
+
+Aligns CI pipeline with repository's default branch by changing the release stage trigger from
+  'main' to 'master'.
+
+
 ## v0.3.0 (2025-05-11)
 
 ### Bug Fixes
