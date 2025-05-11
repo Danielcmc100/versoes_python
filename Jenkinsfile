@@ -2,7 +2,6 @@ pipeline {
   agent any
   environment {
     GH_TOKEN   = credentials('github-token')
-    PYPI_TOKEN = credentials('pypi-token')
   }
   stages {
     stage('Checkout') {

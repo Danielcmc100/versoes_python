@@ -13,6 +13,9 @@ RUN apk update && \
 ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 ENV PATH="${JAVA_HOME}/bin:${PATH}"
 
+# Instale o Git
+RUN apk add --no-cache git
+
 # Crie um usuário e grupo para o agente Jenkins
 ARG USER_ID=1000
 ARG GROUP_ID=1000
