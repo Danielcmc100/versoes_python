@@ -62,7 +62,7 @@ pipeline {
       }
     }
   }
-  Adicione post actions se necessário, como notificações
+  // Adicione post actions se necessário, como notificações
   post {
     always {
       echo 'Pipeline finished.'
