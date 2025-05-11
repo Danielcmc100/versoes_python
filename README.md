@@ -1,6 +1,6 @@
 # versoes-python
 
-This project demonstrates a Python application setup with automated versioning using python-semantic-release, CI/CD pipeline with Jenkins, and containerization with Docker. It serves as a template or example for managing Python project releases and deployments.
+This project demonstrates a Python application setup with automated versioning using python-semantic-release, CI/CD pipeline with Jenkins, and containerization with Docker. It serves as a template or example for managing Python project releases and deployments
 
 ## Getting Started
 
