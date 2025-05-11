@@ -23,7 +23,7 @@ pipeline {
           string(credentialsId: 'github-token', variable: 'GH_TOKEN'),
         ]) {
           sh '''
-            export GITHUB_TOKEN=$GH_TOKEN
+            export GH_TOKEN=$GH_TOKEN
             uv run semantic-release version
           '''
         }
