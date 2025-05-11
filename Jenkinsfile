@@ -25,8 +25,6 @@ pipeline {
 
             # Configurar o usuário git para o semantic-release poder fazer commits (se necessário)
             # Se o semantic-release for fazer commit (ex: changelog, package.json version bump)
-            git config --global user.email "jenkins@example.com" 
-            git config --global user.name "Jenkins CI"
 
             export GH_TOKEN=$GH_TOKEN
             uv run semantic-release version
